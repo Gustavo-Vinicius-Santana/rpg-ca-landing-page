@@ -14,7 +14,7 @@ type HeaderProps = {
 
 export default  function Header({ home, versions, devlog, contact, download, collaborate }: HeaderProps) {
     return (
-    <header className="fixed top-0 left-0 w-full flex items-center justify-between p-4 border-b border-white">
+    <header className="bg-black fixed top-0 left-0 w-full flex items-center justify-between p-4 border-b border-white">
       <div className="flex items-center gap-12">
         <div className="flex items-center gap-2 cursor-pointer">
           <Image src="/logo.png" alt="logo" width={50} height={50} />
