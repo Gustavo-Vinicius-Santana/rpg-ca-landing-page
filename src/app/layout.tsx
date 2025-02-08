@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 import Header from "@/ui/templates/Header";
+import Footer from "@/ui/templates/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,7 +42,8 @@ export default function RootLayout({
         <main className="">
           {children}
         </main>
-        
+
+        <Footer linkEmail="mailto:gus.tec.dev@gmail.com" linkLinkedin="https://www.linkedin.com/in/gustavo-vinicius-596005276/" />
       </body>
     </html>
   );
