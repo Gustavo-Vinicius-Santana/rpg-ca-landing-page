@@ -38,7 +38,7 @@ export default function RootLayout({
         collaborate="/pages/collaborate" 
       />
 
-        <main>
+        <main className="">
           {children}
         </main>
         
