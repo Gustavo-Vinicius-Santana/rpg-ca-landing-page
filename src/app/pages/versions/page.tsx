@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Versions() {
   const versions = [
     {
@@ -51,8 +53,14 @@ export default function Versions() {
           <h2 className="text-white text-center font-semibold text-lg mb-2">FUTURAS VERSÕES</h2>
 
           <p className="text-white text-center text-base leading-relaxed p-4">
-            Para saber mais sobre as principais funcionalidades das proximas versões e como esta o ritmo de desenvolvimento acesso o nosso devlog.
+            Para saber mais sobre as principais funcionalidades das proximas versões e como esta o ritmo de desenvolvimento acesso o nosso devlog
           </p>
+
+          <Link className="flex justify-center" href={"/pages/devlog"}>
+            <button className="w-1/2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-colors ">
+              Devlog
+            </button>
+          </Link>
         </div>
       </div>
 
