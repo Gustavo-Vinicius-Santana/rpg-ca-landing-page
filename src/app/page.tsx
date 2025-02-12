@@ -18,10 +18,16 @@ export default function Home() {
             Baixe já a versão mais recente para Android e melhore sua experiência nos combates de RPG.
           </p>
 
-          <div className="flex justify-center mt-4">
+          <div className="flex items-center flex-col justify-center mt-4 gap-4">
             <a href="https://mega.nz/file/2y5iFSaB#1AnNPlgLi_h41vy3mjcXARw2yqU-IsNuOpe5CwVppB8" target="_blank">
               <button className="bg-blue-600 text-white font-bold py-2 px-4 md:py-3 md:px-6 rounded-lg shadow-md transition-all duration-300 ease-in-out hover:bg-blue-700 hover:scale-105">
                 Download Now
+              </button>
+            </a>
+
+            <a href="https://fir3.net/onb1hBT" target="_blank">
+              <button className="bg-blue-600 text-white font-bold py-2 px-4 md:py-3 md:px-6 rounded-lg shadow-md transition-all duration-300 ease-in-out hover:bg-blue-700 hover:scale-105">
+                Download com anuncios
               </button>
             </a>
           </div>
