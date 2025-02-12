@@ -31,9 +31,9 @@ export default function Collaborate() {
                 </p>
 
                 <div className="flex justify-center mt-4">
-                  <a href="https://mega.nz/file/2y5iFSaB#1AnNPlgLi_h41vy3mjcXARw2yqU-IsNuOpe5CwVppB8" target="_blank">
+                  <a href="https://fir3.net/onb1hBT" target="_blank">
                     <button className="bg-blue-600 text-white font-bold py-2 px-4 md:py-3 md:px-6 rounded-lg shadow-md transition-all duration-300 ease-in-out hover:bg-blue-700 hover:scale-105">
-                      Download Now
+                      Download com anuncio
                     </button>
                   </a>
                 </div>
@@ -84,7 +84,7 @@ export default function Collaborate() {
               </ul>
 
               <div className="flex justify-center mt-4">
-                <a href="#" target="_blank">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVi4l0yL9XOea5P8Z9MLQzOHDXArde8thq1A-IIJQBbm799Q/viewform?usp=sharing" target="_blank">
                   <button className="bg-blue-600 text-white font-bold py-2 px-4 md:py-3 md:px-6 rounded-lg shadow-md transition-all duration-300 ease-in-out hover:bg-blue-700 hover:scale-105">
                     Formulário
                   </button>
