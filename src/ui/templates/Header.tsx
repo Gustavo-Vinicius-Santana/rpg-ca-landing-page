@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { FiMenu, FiX } from "react-icons/fi";
 
 import "@/app/globals.css";
 
@@ -35,48 +36,30 @@ export default function Header({
         <div className="flex items-center gap-12">
           <div className="flex items-center gap-2 cursor-pointer">
             <Image src="/logo.png" alt="logo" width={50} height={50} />
-            <h1 className="font-bold text-3xl">RPG CA</h1>
+            <Link href={home}>
+              <h1 className="font-bold text-2xl md:text-3xl">RPG CA</h1>
+            </Link>
           </div>
 
           {/* Menu Desktop */}
           <div className="hidden md:flex items-center">
             <ul className="flex gap-8">
-              <li className="text-2xl relative group">
-                <Link
-                  href={home}
-                  className="block pb-1 relative transition-colors duration-300 hover:text-yellow-500"
-                >
-                  Home
-                  <span className="absolute left-0 bottom-[-2px] w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-                </Link>
-              </li>
-              <li className="text-2xl relative group">
-                <Link
-                  href={versions}
-                  className="block pb-1 relative transition-colors duration-300 hover:text-yellow-500"
-                >
-                  Versões
-                  <span className="absolute left-0 bottom-[-2px] w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-                </Link>
-              </li>
-              <li className="text-2xl relative group">
-                <Link
-                  href={devlog}
-                  className="block pb-1 relative transition-colors duration-300 hover:text-yellow-500"
-                >
-                  Devlog
-                  <span className="absolute left-0 bottom-[-2px] w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-                </Link>
-              </li>
-              <li className="text-2xl relative group">
-                <Link
-                  href={contact}
-                  className="block pb-1 relative transition-colors duration-300 hover:text-yellow-500"
-                >
-                  Contato
-                  <span className="absolute left-0 bottom-[-2px] w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-                </Link>
-              </li>
+              {[
+                { href: home, label: "Home" },
+                { href: versions, label: "Versões" },
+                { href: devlog, label: "Devlog" },
+                { href: contact, label: "Contatos" },
+              ].map((item) => (
+                <li key={item.href} className="text-2xl relative group">
+                  <Link
+                    href={item.href}
+                    className="block pb-1 relative transition-colors duration-300 hover:text-yellow-500"
+                  >
+                    {item.label}
+                    <span className="absolute left-0 bottom-[-2px] w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -96,87 +79,33 @@ export default function Header({
         </div>
 
         {/* Mobile Menu Button */}
+        {/* Mobile Menu Button */}
         <div className="md:hidden flex items-center">
-          <button
-            className="text-white text-3xl"
-            onClick={toggleMenu} // Alterna o estado do menu
-          >
-            {isMenuOpen ? (
-              // Ícone de "X"
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                className="w-8 h-8"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            ) : (
-              // Ícone de menu hamburguer
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                className="w-8 h-8"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            )}
+          <button className="text-white text-3xl" onClick={toggleMenu}>
+            {isMenuOpen ? <FiX className="w-8 h-8" /> : <FiMenu className="w-8 h-8" />}
           </button>
         </div>
       </header>
 
       {/* Lateral Menu */}
-      <div
-        className={`fixed top-16 left-0 w-full bg-black p-4 md:hidden flex flex-col items-center gap-4 z-20 transition-all duration-300 ${
-          isMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0 overflow-hidden"
-        }`}
-      >
+      <div className={`fixed top-[64px] left-0 w-full bg-black p-4 md:hidden flex flex-col items-center gap-4 z-20 transition-all duration-300 overflow-hidden ${isMenuOpen ? "max-h-60 opacity-100" : "max-h-0 opacity-0"}`}>
         <ul className="flex flex-col gap-4">
-          <li className="text-xl">
-            <Link
-              href={home}
-              className="block pb-1 relative transition-colors duration-300 hover:text-yellow-500"
-            >
-              Home
-            </Link>
-          </li>
-          <li className="text-xl">
-            <Link
-              href={versions}
-              className="block pb-1 relative transition-colors duration-300 hover:text-yellow-500"
-            >
-              Versões
-            </Link>
-          </li>
-          <li className="text-xl">
-            <Link
-              href={devlog}
-              className="block pb-1 relative transition-colors duration-300 hover:text-yellow-500"
-            >
-              Devlog
-            </Link>
-          </li>
-          <li className="text-xl">
-            <Link
-              href={contact}
-              className="block pb-1 relative transition-colors duration-300 hover:text-yellow-500"
-            >
-              Contato
-            </Link>
-          </li>
+          {[
+            { href: home, label: "Home" },
+            { href: versions, label: "Versões" },
+            { href: devlog, label: "Devlog" },
+            { href: contact, label: "Contato" }
+          ].map((item) => (
+            <li key={item.href} className="text-xl">
+              <Link
+                href={item.href}
+                className="block pb-1 relative transition-colors duration-300 hover:text-yellow-500"
+                onClick={() => setIsMenuOpen(false)} // Fecha o menu ao clicar
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
     </>
