@@ -70,7 +70,7 @@ export default function Versions() {
           {versions.map((version, index) => (
             <div
               key={index}
-              className="w-200 h-auto p-6 bg-gray-800 text-white rounded-2xl shadow-lg border border-gray-700 hover:shadow-xl transition-shadow flex flex-col justify-between"
+              className="w-200 h-auto p-6 bg-gray-900 text-white rounded-2xl shadow-lg border border-gray-700 hover:shadow-xl transition-shadow flex flex-col justify-between"
             >
               <div>
                 <h2 className="text-2xl font-semibold mb-4 text-center">{version.name}</h2>

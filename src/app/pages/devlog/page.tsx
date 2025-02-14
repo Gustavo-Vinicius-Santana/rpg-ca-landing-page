@@ -135,7 +135,7 @@ export default function DevLog() {
         <div className="flex flex-col items-center mt-8">
           {/* Histórico de Versões */}
           {devLogs.map((log, index) => (
-            <div key={index} className="bg-gray-800 w-full max-w-[900px] border border-white/50 rounded-2xl p-6 shadow-lg shadow-white/10 mb-6">
+            <div key={index} className="bg-gray-900 w-full max-w-[900px] border border-white/50 rounded-2xl p-6 shadow-lg shadow-white/10 mb-6">
               <h2 className="text-white text-lg font-semibold">[{log.version}] - {log.date} {log.isActualVersion && "- Versão Atual"}</h2>
               
                 {log.haveFeatures && (
