@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Collaborate() {
     return (
       <div className="mt-24 min-h-screen px-4 sm:px-8">
-        <div className="mt-12 bg-black/90 flex flex-col items-center border border-white/50 rounded-2xl p-6 shadow-lg shadow-white/10 gap-6 w-full max-w-6xl mx-auto">
+        <section className="mt-12 bg-black/90 flex flex-col items-center border border-white/50 rounded-2xl p-6 shadow-lg shadow-white/10 gap-6 w-full max-w-6xl mx-auto">
           <h1 className="text-3xl font-bold mb-2 text-center">Colabore financeiramente</h1>
           <div className="w- sm:w-3/4 bg-gray-900 shadow-lg p-6 rounded-2xl border border-white/50 text-center">
             <div className="flex flex-col justify-center w-full mt-6 md:mt-0 ">
@@ -39,17 +39,15 @@ export default function Collaborate() {
                 </div>
               </div>
             </div>
-
-
           </div>
+        </section>
 
-        </div>
         <div className="mt-12 bg-black/90 flex flex-col items-center border border-white/50 rounded-2xl p-6 shadow-lg shadow-white/10 gap-6 w-full max-w-6xl mx-auto">
           <h1 className="text-3xl font-bold mb-6 text-center">Colabore com o Projeto</h1>
       
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-4xl">
             {/* Seção para Desenvolvedores */}
-            <div className="bg-gray-900 shadow-lg p-6 rounded-2xl border border-white/50">
+            <section className="bg-gray-900 shadow-lg p-6 rounded-2xl border border-white/50">
               <h2 className="text-xl font-semibold mb-4">Para Desenvolvedores</h2>
               <p className="text-gray-300 mb-4">
                 Se você é um desenvolvedor e quer contribuir com código, siga os passos abaixo:
@@ -68,12 +66,10 @@ export default function Collaborate() {
                   </button>
                 </a>
               </div>
-
-
-            </div>
+            </section>
             
             {/* Seção para Usuários */}
-            <div className="bg-gray-900 shadow-lg p-6 rounded-2xl border border-white/50">
+            <section className="bg-gray-900 shadow-lg p-6 rounded-2xl border border-white/50">
               <h2 className="text-xl font-semibold mb-4">Para Usuários</h2>
               <p className="text-gray-300 mb-4">
                 Se você é um usuário e quer ajudar, veja como pode colaborar:
@@ -91,7 +87,7 @@ export default function Collaborate() {
                 </a>
               </div>
 
-            </div>
+            </section>
           </div>
         </div>
       </div>

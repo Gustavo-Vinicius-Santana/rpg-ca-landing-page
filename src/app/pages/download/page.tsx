@@ -12,10 +12,10 @@ export default function Download() {
 
     return (
       <div className="mt-28 px-4">
-        <div className="min-h-screen flex flex-col items-center p-4 bg-black/90 border border-white/50 rounded-2xl shadow-lg shadow-white/10">
+        <section className="min-h-screen flex flex-col items-center p-4 bg-black/90 border border-white/50 rounded-2xl shadow-lg shadow-white/10">
           <h1 className="text-3xl font-bold mb-6">Download RPG CA</h1>
           <p className="text-white text-center text-base leading-relaxed mb-4">
-            Baixe a versçao mais recente da aplicação em diversas plataformas.
+            Baixe a verção mais recente da aplicação em diversas plataformas.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {downloads.map(({ name, icon, link, description, avaible, linkEncur }) => (
@@ -47,7 +47,7 @@ export default function Download() {
               </div>
             ))}
           </div>
-        </div>
+        </section>
       </div>
     );
   }

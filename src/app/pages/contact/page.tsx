@@ -4,7 +4,7 @@ export default function Contact() {
     return (
       <div className="mt-28 h-screen px-4">
         {/* Seção de Contato */}
-        <div className="flex flex-col items-center justify-center gap-12">
+        <section className="flex flex-col items-center justify-center gap-12">
           <div className="bg-black/90 flex flex-col justify-center w-full max-w-[900px] border border-white/50 rounded-2xl p-6 shadow-lg shadow-white/10">
             <h1 className="text-white text-center font-semibold text-xl mb-2">CONTATO</h1>
             <p className="text-white text-center text-base leading-relaxed p-4">
@@ -40,7 +40,7 @@ export default function Contact() {
               </button>
             </Link>
           </div>
-        </div>
+        </section>
       </div>
     );
   }
