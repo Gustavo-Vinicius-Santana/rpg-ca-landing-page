@@ -1,6 +1,8 @@
+import Carrousel from "@/ui/components/carrousel/Carrousel";
+
 export default function Home() {
   return (
-    <div className="mt-28 px-4">
+    <div className="mt-28 px-4 sm:px-8">
       {/* Seção Sobre e Download */}
       <div className="flex flex-wrap items-center justify-center w-full gap-6">
         <div className="bg-black/90 w-full md:w-1/3 border border-white/50 rounded-2xl p-6 shadow-lg shadow-white/10">
@@ -32,6 +34,15 @@ export default function Home() {
             </a>
           </div>
         </div>
+      </div>
+
+      {/* Seção Carrousel */}
+      <div className="bg-black/90 mt-12 w-full flex flex-col items-center justify-center border border-white/50 rounded-2xl p-6 shadow-lg shadow-white/10 gap-6">
+      <h1 className="text-white text-center font-semibold text-xl mb-2">CONFIRA</h1>
+      <div>
+        <p>Confira imagens da versão mais recente do RPG combat assistant, já disponivel para download</p>
+      </div>
+          <Carrousel />
       </div>
 
       {/* Seção Funcionalidades */}
