@@ -109,26 +109,26 @@ export default function DevLog() {
     <div className="mt-28 px-4 flex flex-col items-center">
 
     <div className="flex flex-wrap justify-center gap-6 mt-6 mb-12 px-4">
-      <div className="bg-black/90 w-full sm:w-5/6 md:w-1/2 lg:w-1/3 border border-white/50 rounded-2xl p-6 shadow-lg shadow-white/10">
+      <section className="bg-black/90 w-full sm:w-5/6 md:w-1/2 lg:w-1/3 border border-white/50 rounded-2xl p-6 shadow-lg shadow-white/10">
         <h2 className="text-white text-center font-semibold text-lg mb-2">SOBRE O DEVLOG</h2>
 
         <p className="text-white text-center text-base leading-relaxed p-4">
           O DevLog é um espaço dedicado para acompanhar o desenvolvimento do projeto, 
           registrando novas funcionalidades, melhorias e correções em cada versão.
         </p>
-      </div>
+      </section>
 
-      <div className="bg-black/90 w-full sm:w-5/6 md:w-1/2 lg:w-1/3 border border-white/50 rounded-2xl p-6 shadow-lg shadow-white/10">
+      <section className="bg-black/90 w-full sm:w-5/6 md:w-1/2 lg:w-1/3 border border-white/50 rounded-2xl p-6 shadow-lg shadow-white/10">
         <h2 className="text-white text-center font-semibold text-lg mb-2">ATUALIZAÇÕES</h2>
 
         <p className="text-white text-center text-base leading-relaxed p-4">
           As atualizações ocorrem à medida que a aplicação é desenvolvida. As funcionalidades previstas para a próxima versão 
           são sempre colocadas na seção de próximos passos.
         </p>
-      </div>
+      </section>
     </div>
 
-      <div className="bg-black/90 w-full md:max-w-[900px] border border-white/50 rounded-2xl p-6 shadow-lg shadow-white/10">
+      <section className="bg-black/90 w-full md:max-w-[900px] border border-white/50 rounded-2xl p-6 shadow-lg shadow-white/10">
         {/* Título */}
         <h1 className="text-white font-semibold text-2xl mb-4 text-center">Dev Log</h1>
 
@@ -196,7 +196,7 @@ export default function DevLog() {
           ))}
         </div>
 
-      </div>
+      </section>
 
     </div>
   );
