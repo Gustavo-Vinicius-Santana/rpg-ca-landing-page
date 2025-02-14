@@ -41,15 +41,15 @@ export default function Versions() {
   return (
     <div className="flex flex-col justify-around mt-28 px-4 md:px-10">
       <div className="w-full flex flex-wrap justify-center gap-6 p-4">
-        <div className="bg-black/90 w-full sm:w-1/2 lg:w-1/3 border border-white/50 rounded-2xl p-6 shadow-lg shadow-white/10">
+        <section className="bg-black/90 w-full sm:w-1/2 lg:w-1/3 border border-white/50 rounded-2xl p-6 shadow-lg shadow-white/10">
           <h2 className="text-white text-center font-semibold text-lg mb-2">SOBRE AS VERSÕES</h2>
 
           <p className="text-white text-center text-base leading-relaxed p-4">
             As versões alpha tem como objetivo estabelecer as principais funcionalidades da aplicação e a sua interface inicial.
           </p>
-        </div>
+        </section>
 
-        <div className="bg-black/90 w-full sm:w-1/2 lg:w-1/3 border border-white/50 rounded-2xl p-6 shadow-lg shadow-white/10">
+        <section className="bg-black/90 w-full sm:w-1/2 lg:w-1/3 border border-white/50 rounded-2xl p-6 shadow-lg shadow-white/10">
           <h2 className="text-white text-center font-semibold text-lg mb-2">FUTURAS VERSÕES</h2>
 
           <p className="text-white text-center text-base leading-relaxed p-4">
@@ -61,16 +61,16 @@ export default function Versions() {
               Devlog
             </button>
           </Link>
-        </div>
+        </section>
       </div>
 
-      <div className="bg-black/90 w-full border border-white/50 rounded-2xl p-6 shadow-lg shadow-white/10 mt-12">
+      <section className="bg-black/90 w-full border border-white/50 rounded-2xl p-6 shadow-lg shadow-white/10 mt-12">
         <h1 className="text-3xl font-bold mb-6 text-center">VERSÕES</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
           {versions.map((version, index) => (
             <div
               key={index}
-              className="w-200 h-auto p-6 bg-gray-800 text-white rounded-2xl shadow-lg border border-gray-700 hover:shadow-xl transition-shadow flex flex-col justify-between"
+              className="w-200 h-auto p-6 bg-gray-900 text-white rounded-2xl shadow-lg border border-gray-700 hover:shadow-xl transition-shadow flex flex-col justify-between"
             >
               <div>
                 <h2 className="text-2xl font-semibold mb-4 text-center">{version.name}</h2>
@@ -97,7 +97,7 @@ export default function Versions() {
             </div>
           ))}
         </div>
-      </div>
+      </section>
     </div>
   );
 }
