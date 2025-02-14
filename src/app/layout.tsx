@@ -16,8 +16,36 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "rpg combat assistant",
-  description: "Site do aplicativo rpg dm combat assistant",
+  title: "RPG Combat Assistant",
+  description: "Site oficial do RPG DM Combat Assistant, um app para facilitar o gerenciamento de combates.",
+
+  keywords: ["RPG", "Combate", "DM", "Ferramenta de RPG", "RPG DM Combat Assistant", "RPG Combat Assistant"],
+
+  openGraph: {
+    title: "RPG Combat Assistant",
+    description: "Site oficial do RPG DM Combat Assistant.",
+
+    url: "https://rpg-combat-assistant.vercel.app/",
+
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "RPG Combat Assistant",
+      },
+    ],
+
+    siteName: "RPG Combat Assistant",
+    locale: "pt_BR",
+
+    type: "website",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
